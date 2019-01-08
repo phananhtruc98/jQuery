@@ -1,0 +1,53 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Checked selector</title>
+    <script src="jquery-2.2.4.js"></script>
+    <script type="text/javascript">
+       
+        $(document).ready(function () {
+            $('input[name="skills"]').click(function () {
+                getSelectedCheckboxes('skills');
+            });
+            $('input[name="cities"]').click(function () {
+                getSelectedCheckboxes('cities');
+            });
+            var getSelectedCheckboxes = function (groupName) {
+                var result = $('input[name="' + groupName +'"]:checked');
+                if (result.length > 0) {
+                    var resultString = result.length + " checkboxes checked<br/>";
+                    result.each(function () {
+                        resultString += $(this).val() + "<br />";
+                    });
+                    $('#divSelected' + groupName).html(resultString);
+                }
+                else {
+                    $('#divSelected' + groupName).html("No checkbox checked");
+                }
+            }
+        });
+    </script>
+</head>
+<body style="font-family: Arial">
+
+    Skills:
+    <input type="checkbox" name="skills" value="JavaScript" />JavaScript
+    <input type="checkbox" name="skills" value="jQuery" />jQuery
+    <input type="checkbox" name="skills" value="C#" />C#
+    <input type="checkbox" name="skills" value="VB" />VB
+    <br /><br />
+    Cities:
+    <input type="checkbox" name="cities" value="New Delhi" />New Delhi
+    <input type="checkbox" name="cities" value="New York" />New York
+    <input type="checkbox" name="cities" value="Ho Chi Minh" />Ho Chi Minh
+    <input type="checkbox" name="cities" value="Ha Noi" />Ha Noi
+    <br /><br />
+    <input id="btnGetSelectedSkills" type="submit" value="Get Selected Skills" />
+    <input id="btnGetSelectedCities" type="submit" value="Get Selected Cities" />
+
+    <br /><br />
+    <div id="divSelectedskills"></div>
+    <div id="divSelectedcities"></div>
+</body>
+</html>

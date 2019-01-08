@@ -1,0 +1,59 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Checked selector</title>
+    <script src="jquery-2.2.4.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('#btnSubmit').click(function () {
+                var result = $('input[type="radio"]:checked');
+                if (result.length > 0) {
+                    $('#divResult').html(result.val() + " is checked");
+                }
+                else {
+                    $('#divResult').html("No radio button checked");
+                }
+            });
+        });
+
+        $(document).ready(function () {
+            $('#btnSubmit2').click(function () {
+                var result2 = $('input[type="checkbox"]:checked');
+                if (result2.length > 0) {
+                    var result2String = result2.length + " checkboxes checked<br/>";
+                    result2.each(function () {
+                        result2String += $(this).val() + "<br />";
+                    });
+                    $('#divResult2').html(result2String);
+                }
+                else {
+                    $('#divResult2').html("No checkbox checked");
+                }
+            });
+        });
+    </script>
+</head>
+<body style="font-family: Arial">
+    Gender:
+    <input type="radio" name="gender" value="Male">Male
+    <input type="radio" name="gender" value="Female">Female
+    <br /><br />
+    <input id="btnSubmit" type="submit" value="submit" />
+    <br /><br />
+    <div id="divResult">
+    </div>
+
+    <hr />
+
+    Skills:
+    <input type="checkbox" name="skills" value="JavaScript" />JavaScript
+    <input type="checkbox" name="skills" value="jQuery" />jQuery
+    <input type="checkbox" name="skills" value="C#" />C#
+    <input type="checkbox" name="skills" value="VB" />VB
+    <br /><br />
+    <input id="btnSubmit2" type="submit" value="submit" />
+    <br /><br />
+    <div id="divResult2"></div>
+</body>
+</html>
