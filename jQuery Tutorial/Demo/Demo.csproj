@@ -67,16 +67,53 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Append_Prepend_Elements.html" />
+    <Content Include="bootstrap\css\bootstrap-theme.css" />
+    <Content Include="bootstrap\css\bootstrap-theme.min.css" />
+    <Content Include="bootstrap\css\bootstrap.css" />
+    <Content Include="bootstrap\css\bootstrap.min.css" />
+    <Content Include="bootstrap\css\dataTables.bootstrap.min.css" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.svg" />
+    <Content Include="bootstrap\js\bootstrap.js" />
+    <Content Include="bootstrap\js\bootstrap.min.js" />
+    <Content Include="bootstrap\js\dataTables.bootstrap.min.js" />
+    <Content Include="bootstrap\js\jquery-3.3.1.js" />
+    <Content Include="bootstrap\js\jquery.dataTables.min.js" />
+    <Content Include="bootstrap\js\npm.js" />
+    <Content Include="bt2.html" />
+    <Content Include="bt3.html" />
+    <Content Include="ChangeMethod.html" />
     <Content Include="Checkbox group.html" />
     <Content Include="Checked selector .html" />
+    <Content Include="ConvertJSON.html" />
+    <Content Include="DifferenceEachMapMethod.html" />
+    <Content Include="DOMManipulationMethod.html" />
+    <Content Include="FiveStars.html" />
+    <Content Include="Get selected checkbox text.html" />
+    <Content Include="Images\help.ico" />
+    <Content Include="Images\kute.jpg" />
     <Content Include="index.html" />
     <Content Include="jquery-2.2.4.js" />
+    <Content Include="JSON.html" />
+    <Content Include="MapMethod.html" />
+    <Content Include="MethodChaining.html" />
+    <Content Include="MouseEvents.html" />
+    <Content Include="SelectedSelector.html" />
     <Content Include="Web.config" />
+    <Content Include="WrapElements.html" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="bootstrap\css\bootstrap-theme.css.map" />
+    <Content Include="bootstrap\css\bootstrap-theme.min.css.map" />
+    <Content Include="bootstrap\css\bootstrap.css.map" />
+    <Content Include="bootstrap\css\bootstrap.min.css.map" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.eot" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.ttf" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff" />
+    <Content Include="bootstrap\fonts\glyphicons-halflings-regular.woff2" />
     <None Include="packages.config" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Web.Debug.config">
